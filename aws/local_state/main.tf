@@ -20,5 +20,11 @@ resource "aws_instance" "app_server" {
   tags = {
     Name = "Terraform_Demo"
   }
+resource "aws_instance" web_server" {
+  ami           = "ami-0bdc7d025135d7b49"
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "PR_Demo"
 }
 
