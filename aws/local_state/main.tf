@@ -27,3 +27,10 @@ resource "aws_instance" "web_server" {
     Name = "PR_Demo"
  }
 }
+resourec "aws_instance" "credentical_server" {
+  ami           = "ami-0bdc7d025135d7b49"
+  instance_type = "t3.micro"
+  tag = {
+    Name = "mahi_Demo"
+ }
+}
